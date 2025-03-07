@@ -1,0 +1,196 @@
+self-intro:
+My name is Iswarya. I have 3 years of experience in Azure data engineering.I currently work at Centrepoint Soft Tech Pvt. Ltd.
+I have worked on developing end-to-end data engineering pipelines and have expertise in tools and technologies like Python, PySpark, SQL, Azure Databricks , and Azure Data Factory. My responsibilities primarily include creating data pipelines using Azure Data Factory and moving the data from different locations to different destinations.
+I have strong expertise in PySpark and SQL, and I am familiar with writing code as well as performing validations and creating end-to-end reusable modules using these languages. I also have significant experience in SQL, working with Oracle SQL Server databases.
+Apart from this, I have worked in a group of team mates and also  individual contributed. I am familiar with Jira and GitHub for project management as well as code management.
+
+Customer 360 Data Platform:
+The Customer 360 Data Platform project was  to bring together customer data from different places into one clear view.The data came from SQL Server and Oracle databases the data is related to (customer profiles and transactions), social media APIs (Twitter, Facebook for customer engagement), and call center logs (CSV/JSON files containing customer interactions). 
+To efficiently ingest and process this data, I used Azure Data Factory (ADF), leveraging Self-hosted Integration Runtime (SHIR) for secure on-premises data transfer and built-in API connectors to fetch social media engagement data. The ingested data was first stored in Azure Data Lake Storage Gen2 (ADLS Gen2), following the Medallion Architecture (Bronze, Silver, and Gold layers) for structured data processing.
+After ingestion, I stored the raw data in the Bronze layer, performing schema validation to ensure its consistency and integrity before further processing.
+ After that i moved the data to the  Silver layer, I used PySpark to clean data by handling null values, removing duplicates, and adding new columns as required.
+In the Gold Layer, I've further optimized the data using business aggregations and calculated key metrics like Customer Lifetime Value (CLTV) and product preferences. I then used Power BI to create visual reports on customer segmentation and sales performance, helping the business make data-driven decisions with clear insights.
+
+
+
+Inventory Management System:
+In my previous project, I worked on migrating an Inventory Management System from a local SQLite database to a cloud-based solution in Azure, aiming to create a scalable and efficient platform for inventory tracking, data processing, and analytics.
+ I used Azure Data Factory (ADF) to extract data from various sources, such as Oracle SQL Server, CSV files, APIs, IoT devices, and web-scraped competitor data. 
+The raw data was then ingested and stored in Azure Data Lake Storage (ADLS) in an optimized Parquet format for better storage and querying. In the transformation phase, I utilized ADF Mapping Data Flows and Azure Databricks with PySpark to clean, preprocess, and standardize the data by handling duplicates, missing values, and performing data joins. 
+The processed data was stored in Azure Synapse Analytics for large-scale reporting and in Azure SQL Database for operational queries. To handle real-time data, I implemented Azure Event Hubs and Azure Stream Analytics for IoT device data, allowing live inventory updates. I also integrated Power BI with Azure Synapse and SQL Database to create interactive dashboards for visualizing key metrics such as inventory trends, sales performance, and stock levels. 
+For monitoring, I used Azure Monitor to track pipeline performance and ensure system reliability. Additionally, backup and archival processes were established in Azure Blob Storage to comply with long-term storage requirements. This project successfully processed over 20GB of data, improving data accuracy and providing real-time insights that enabled better decision-making for inventory management. By leveraging Azure services and the Medallion architecture, the solution achieved scalability, efficiency, and robustness, resulting in improved operational excellence.
+
+
+
+I have over three years of experience as a Data Engineer, where I have worked on designing scalable data pipelines, implementing ETL workflows, and optimizing cloud-based solutions using Azure tools like Data Factory, Databricks, and PySpark. My focus has been on transforming raw data into meaningful insights to support decision-making and drive business success
+. I am excited to bring this expertise to a collaborative team like yours and learn more about the innovative projects your company is working on.
+
+ My career goal is to continue growing as a data engineering professional, tackling complex challenges, and contributing to impactful solutions.
+
+ I’m also looking forward to understanding more about the role, the company’s vision, and how I can align my skills to contribute effectively to the team’s success."
+
+
+
+Centrepoint Soft Tech Pvt.Ltd :: Jan 2022 to Till Date
+1383, 5th Floor, 5th Block, HBR Layout Above Axis Bank Service Road, Outer Ring Rd, Bengaluru, Karnataka - 560045
+info@centerpointec.org
+
+services::
+----------
+application-management, data quality, IOT, embedded-system, machine-learning, cloud computing
+Headquarters: Deerfield, Illinois, United States
+
+
+
+Day to day activities 👍
+ 
+     Daily we have a 15 min of standup call in that we will discuss about the yesterdays task which we have done or not and if we have any roadblocks i will discuss about that. And we will discuss the todays task. After that i will spend 2 to 3 hours to write the scripts in databricks transformations which really needs for my project.
+
+
+
+Project:
+
+We are developing a Customer 360-degree platform to provide a holistic view of customers by integrating data from multiple sources such as SQL Server (customer and transaction data), social media (via APIs like Twitter and Facebook), and call center data (stored in CSV/JSON). The data is first ingested into a cloud environment using Azure Data Factory (ADF), leveraging built-in connectors for APIs and Self-hosted Integration Runtime (SHIR) for local files.
+
+After ingestion, the data is stored in the Bronze Layer (raw data). In the Silver Layer, we perform data validation and profiling, checking for null values, schema issues, and outliers. Next, in the Gold Layer, we apply business logic and transformations, such as creating derived columns, categorizing values, and performing aggregations to create analytical-ready data.
+
+Throughout the process, we manage each transformation step in Jupyter Notebooks for better control and traceability. Finally, the transformed data is pushed into Azure Data Lake and consumed via Power BI, where analysts can build interactive dashboards to visualize and explore customer insights.
+
+
+
+"The Customer 360 Data Platform is designed to provide a holistic view of customers by integrating data from multiple sources, including SQL Server (customer and transaction data), social media APIs (Twitter, Facebook), and call center logs (CSV/JSON files). We used Azure Data Factory (ADF) to ingest data, leveraging built-in connectors for API sources and Self-hosted Integration Runtime (SHIR) for securely transferring on-premise data. The data was stored in Azure Data Lake following the Medallion Architecture (Bronze, Silver, and Gold layers).
+In the Bronze Layer, we stored raw, unprocessed data. The Silver Layer focused on schema validation, data cleansing, and handling missing values. The Gold Layer applied business transformations, such as categorizing customer segments, calculating aggregated insights, and creating derived metrics. For data processing and transformation, we used Azure Databricks with PySpark & Python, managing workflows within Jupyter Notebooks for better control and traceability. The transformed data was then pushed to Power BI, where analysts could build interactive dashboards to derive insights on customer behavior, spending trends, and engagement patterns.
+This platform enabled automated data pipelines, real-time analytics, and improved decision-making for business users. My role involved designing ETL workflows, implementing data validation, and optimizing performance using PySpark, ensuring efficiency and scalability."_
+1. Customer Table
+customer_id
+first_name
+last_name
+email
+phone_number
+date_of_birth
+gender
+address
+created_at
+
+2. Transactions Table
+transaction_id
+customer_id
+transaction_date
+amount
+transaction_type
+payment_method
+
+3. Social Media Activity Table
+social_id
+customer_id
+platform
+post_id
+engagement_type
+engagement_date
+
+4. Call Center Interactions Table
+call_id
+customer_id
+call_date
+call_duration
+issue_type
+resolution_status
+
+5. Customer Segmentation Table
+segment_id
+customer_id
+segment_type
+avg_transaction
+engagement_score
+
+
+
+1. Incremental Data Loading:
+
+How do you handle incremental data loading in your project? Can you provide an example of how you load only the new or changed data without reloading the entire dataset?
+
+"In our project, we implemented incremental data loading by tracking changes using the last_updated_at column in SQL Server. We stored the maximum processed timestamp in a control table and used it in our next extraction query. For social media data, we leveraged API delta tokens to fetch only new posts. This helped us reduce processing time and ensured that our Customer 360 insights were always up to date without reloading the entire dataset."
+
+
+2. Optimizing Spark Code:
+
+How do you optimize Spark code for better performance? Could you walk us through the optimizations you’ve applied in your project, such as partitioning, caching, or adjusting shuffle settings?
+
+"In our Customer 360 Data Platform, we applied several key Spark optimizations to improve processing performance. First, we partitioned large datasets by columns like customer_id and transaction_date, which improved parallelism and reduced shuffle. We also cached frequently used tables, such as customer segments, to speed up subsequent transformations. To optimize shuffle performance, we fine-tuned shuffle partitions and repartitioned data before performing joins. Finally, we used broadcast joins for smaller dimension tables to eliminate unnecessary shuffling, which significantly reduced execution time. These optimizations helped us process large datasets quickly, minimize resource consumption, and scale our platform as data volume grew."
+
+
+3. SQL Query Optimization:
+
+How do you optimize your SQL queries to ensure fast processing and minimal resource usage?
+
+Can you provide five examples of SQL transformations you’ve applied in your project that improved performance or efficiency?
+
+"In our Customer 360 Data Platform, we optimized SQL queries by indexing key columns like customer_id and transaction_date to speed up lookups and joins. We used WHERE clauses efficiently to filter data early, reducing processing time. For joins, we ensured they were based on indexed columns and used CTEs instead of subqueries for better performance. Additionally, we optimized GROUP BY clauses by partitioning data before aggregation. These optimizations improved query speed, reduced resource usage, and ensured scalability as data grew."
+4. Writing Data to Data Lake or Synapse Analytics:
+
+How do you write the transformed data to Azure Data Lake or Azure Synapse Analytics? Could you explain the storage format used and why you chose that format?
+
+How are you ensuring that the data is written in an optimized and query-friendly format?
+
+"In our Customer 360 Data Platform, we write transformed data to Azure Data Lake in the Parquet format for its high performance in large-scale data querying. Parquet is columnar, which ensures better compression and faster read times. We also use Delta Lake on top of Parquet in Azure Synapse Analytics, which supports ACID transactions, making our data consistent and reliable. To ensure query performance, we partition the data based on columns like transaction_date and customer_id and use compression techniques to minimize storage and optimize queries. These strategies ensure that our data is both optimized for storage and easily accessible for analysis."
+
+
+5. Writing Data to SQL Server:
+
+How do you write the final processed data back to SQL Server? What methods or tools do you use for data transfer from the cloud to on-premise systems?
+
+Could you explain the connection setup and how you handle potential issues like data consistency or integrity?
+
+To write the final processed data back to SQL Server, we use Azure Data Factory (ADF) with a Self-hosted Integration Runtime (SHIR) to securely transfer data from Azure to the on-premise database. The connection to SQL Server is established using an SQL Server Linked Service within ADF, with appropriate authentication and network configurations. For bulk data transfers, we rely on bulk insert operations, and in some cases, we use SQL Server Integration Services (SSIS). To ensure data consistency and integrity, we use transactional processing, with checksums to verify that the data was transferred correctly. We also implement retry logic in case of temporary issues and monitor the entire process using Azure Monitor to address any inconsistencies quickly."
+6. Connecting Multiple Jupyter Notebooks:
+
+How do you manage and connect multiple Jupyter Notebooks in your project?
+
+Do you use any orchestrators or tools to chain the notebooks together into a cohesive data pipeline?
+
+
+we use Azure Data Factory (ADF) as the orchestrator to connect multiple Jupyter Notebooks. Each notebook handles a specific part of the data pipeline, such as ingestion, transformation, or profiling. We integrate Azure Databricks Notebooks with ADF and automate the execution flow, ensuring that each notebook runs sequentially and passes data between them as required. ADF helps us orchestrate dependencies, monitor execution, and schedule notebooks to run at specific times. Data is passed between the notebooks using Azure Blob Storage or Azure Data Lake, ensuring a seamless and efficient workflow.
+
+
+7. Scheduling Pipelines:
+
+How do you schedule your data pipelines?
+
+Can you explain how you would schedule a pipeline to run on a specific date, for example, tomorrow, or next week?
+
+What tools or technologies are you using for pipeline scheduling (e.g., Azure Data Factory or any other orchestration tools)?
+
+we schedule data pipelines using Azure Data Factory (ADF). ADF provides robust scheduling through time-based triggers that allow us to configure the exact date and time for a pipeline to run, whether it’s tomorrow, next week, or on a recurring basis. For instance, if we want to schedule a pipeline to run tomorrow, we set the trigger for that specific date and time. We also use event-based triggers for certain workflows, such as when a file arrives in Azure Blob Storage. ADF Monitoring helps us track the pipeline's execution and ensure it runs as scheduled."
+
+8. Slowly Changing Dimensions (SCD):
+
+How do you implement Slowly Changing Dimensions (SCD) in your project?
+
+Could you explain SCD Types (0, 1, 2) and how you’ve implemented them in your project?
+
+For example, when updating customer data, how do you manage historical changes and maintain accurate tracking?
+
+we implemented Slowly Changing Dimensions (SCD) to manage evolving customer data effectively. For SCD Type 1, we updated customer attributes like email or phone number by simply overwriting the old value with the new one, as historical tracking wasn’t needed. For SCD Type 2, we handled changes like address updates by adding new records with start and end dates, ensuring we preserved the historical data. This approach allowed us to track the customer's address changes over time. We used effective dates and a current_flag to manage which records were active, ensuring accurate tracking and reporting on customer data."
+9. Star and Snowflake Schema:
+
+Can you give examples of how you’ve implemented Star Schema and Snowflake Schema in your data model?
+
+Could you explain how these schemas were used for optimizing data retrieval and reporting?
+
+we used both Star Schema and Snowflake Schema based on the reporting and performance requirements. For example, in the Star Schema, we designed the transactions table as the central fact table, linked to dimension tables like customer_details and product_info. This simplified querying and reporting by allowing us to directly join these tables for fast performance. On the other hand, for larger dimension data, like customer_details, we normalized it into multiple related tables in the Snowflake Schema, which improved storage efficiency and ensured data consistency. Both schemas allowed us to balance performance and storage efficiency for different use cases."
+we used both Star and Snowflake Schemas to optimize data retrieval and reporting. For the Star Schema, we designed a central fact table called Fact_Transactions that linked to dimension tables like Dim_Customers and Dim_Products. This denormalized structure helped speed up query performance and simplified reporting for business users. In contrast, for our Snowflake Schema, we normalized the dimension tables further. For example, customer data was split into Dim_Customers and Dim_Customer_Address to reduce redundancy and improve storage efficiency. The choice of schema depended on the specific reporting and data integrity requirements. The Star Schema was ideal for quick, high-level reporting, while the Snowflake Schema ensured better data consistency and storage optimization."
+
+
+10. Performance Issues and Fixes:
+
+What are five performance issues you faced in your project, and how did you resolve them?
+
+we encountered several performance issues that we had to address. One issue was slow SQL queries due to complex joins, which we solved by adding indexes on frequently queried columns and optimizing join conditions. We also faced high memory consumption in Spark jobs, which we resolved by repartitioning large datasets and applying broadcast joins. For slow API data ingestion, we implemented incremental loading and parallel processing in Azure Data Factory. Our ETL pipeline had inefficiencies, which we resolved by refactoring transformations to make them more efficient. Finally, we optimized Power BI reports by creating pre-aggregated tables to improve dashboard loading times. These fixes helped us ensure the system remained performant even as the data grew."
+
+
+
+
+Founded
+2016
+Headquarters
+Newark, New Jersey
